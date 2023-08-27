@@ -1,25 +1,23 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
+
+import img_girl from "../../resources/images/img_girl.jpg";
 ---
 
 <Layout title="Welcome to Backgrounds.">
 	<p style="color:#fffffc;">Backgrounds</p>
 </Layout>
-<img
-	src="/files/background/img_girl.jpg"
-	alt="girl a jacket"
-	width="200"
-	height="300"
-/>
+<img src={img_girl} alt="girl a jacket" width="200" height="300" />
 <img
 	src="/files/background/wp6663292-reza-pishro-wallpapers.jpg"
 	alt="reza pishro"
 	width="200"
 	height="300"
+	loading="lazy"
 />
 <img
-	src="/files/background/public/387.jpg"
+	src="/files/background/387.jpg"
 	alt="Japan flag"
 	width="200"
 	height="300"
